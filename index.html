@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jiran</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Manrope:wght@300;400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ── GRAIN OVERLAY ────────────────────────────────────────── -->
+<div class="grain"></div>
+
+<!-- ── HERO ─────────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-bg-logo"><img src="images/logo.png" alt=""></div>
+  <canvas id="network-canvas"></canvas>
+  <div class="glass">
+    <h1>Jiran</h1>
+    <p>Small Stores. Big Network.</p>
+    <span>A smart inventory platform that helps retailers exchange stock, reduce waste, rebalance supply, and make better decisions using real-time data.</span>
+  </div>
+</section>
+
+<!-- ── MARQUEE ───────────────────────────────────────────────── -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span>OVERSTOCKED</span><span class="dot">·</span>
+    <span>DEAD STOCK</span><span class="dot">·</span>
+    <span>ISOLATED STORES</span><span class="dot">·</span>
+    <span>WASTED SUPPLY</span><span class="dot">·</span>
+    <span>MISSED DEMAND</span><span class="dot">·</span>
+    <span>INEFFICIENCY</span><span class="dot">·</span>
+    <span>OVERSTOCKED</span><span class="dot">·</span>
+    <span>DEAD STOCK</span><span class="dot">·</span>
+    <span>ISOLATED STORES</span><span class="dot">·</span>
+    <span>WASTED SUPPLY</span><span class="dot">·</span>
+    <span>MISSED DEMAND</span><span class="dot">·</span>
+    <span>INEFFICIENCY</span><span class="dot">·</span>
+  </div>
+</div>
+
+<!-- ── PROBLEM ──────────────────────────────────────────────── -->
+<section class="section-full problem-section reveal">
+  <canvas id="isolated-canvas" class="section-bg-canvas"></canvas>
+  <div class="problem-content">
+    <div class="section-eyebrow" style="justify-content:center;">
+      <span class="section-num">01</span>
+      <span class="label">The Problem</span>
+    </div>
+    <h2 class="problem-heading">RETAIL STORES OPERATE IN ISOLATION</h2>
+    <p>Tracking inventory, responding to demand shifts, and avoiding losses from overstocking or dead stock — these are daily battles for independent retailers. And they're fighting them alone.</p>
+  </div>
+</section>
+
+<!-- ── DIVIDER ────────────────────────────────────────────────── -->
+<div class="section-divider"></div>
+
+<!-- ── INTRODUCING JIRAN BANNER ──────────────────────────────── -->
+<div class="marquee-wrap marquee-highlight">
+  <div class="marquee-track marquee-track-slow">
+    <span>INTRODUCING JIRAN</span><span class="dot">·</span>
+    <span>INTRODUCING JIRAN</span><span class="dot">·</span>
+    <span>INTRODUCING JIRAN</span><span class="dot">·</span>
+    <span>INTRODUCING JIRAN</span><span class="dot">·</span>
+    <span>INTRODUCING JIRAN</span><span class="dot">·</span>
+    <span>INTRODUCING JIRAN</span><span class="dot">·</span>
+    <span>INTRODUCING JIRAN</span><span class="dot">·</span>
+    <span>INTRODUCING JIRAN</span><span class="dot">·</span>
+  </div>
+</div>
+
+<!-- ── SOLUTION ─────────────────────────────────────────────── -->
+<section class="section two-col reveal">
+  <div class="two-col-text">
+    <div class="section-eyebrow">
+      <span class="section-num">02</span>
+      <span class="label">Our Solution</span>
+    </div>
+    <h2>Every Store, Connected.</h2>
+    <p>Jiran connects retailers into a unified, intelligent network. It combines a centralized B2B marketplace with real-time inventory tracking, allowing stores to buy and sell excess stock within a trusted local ecosystem.</p>
+  </div>
+  <div class="two-col-visual">
+    <canvas class="mini-canvas" id="connected-canvas"></canvas>
+    <div class="visual-caption">Stores unified — real-time data, shared network</div>
+  </div>
+</section>
+
+<!-- ── FEATURES ─────────────────────────────────────────────── -->
+<section class="section">
+  <div class="section-eyebrow reveal">
+    <span class="section-num">03</span>
+    <span class="label">Core Features</span>
+  </div>
+  <h2 class="reveal">FIVE TOOLS. ONE PLATFORM.</h2>
+  <div class="grid reveal-group">
+    <div class="card">
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24"><path d="M7 16V4m0 0L3 8m4-4 4 4"/><path d="M17 8v12m0 0 4-4m-4 4-4-4"/><circle cx="7" cy="16" r="2"/><circle cx="17" cy="8" r="2"/></svg>
+      </div>
+      <h3>B2B Inventory Exchange</h3>
+      <p>Trade excess stock with nearby retailers instead of letting it go to waste.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+      </div>
+      <h3>Demand Forecasting using AI</h3>
+      <p>Anticipate demand trends and plan inventory with confidence.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M6 8h4M6 11h3"/><circle cx="16" cy="9" r="2"/><path d="M14 13s.5-2 2-2 2 2 2 2"/></svg>
+      </div>
+      <h3>Real-Time Inventory</h3>
+      <p>Instantly track stock levels and product availability across stores.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      </div>
+      <h3>Dead Stock Detection</h3>
+      <p>Identify slow-moving items early and take action before losses grow.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 10h20"/><path d="M6 14h.01M10 14h4"/></svg>
+      </div>
+      <h3>POS Integration</h3>
+      <p>Connects directly with your existing point-of-sale system — no duplicate tools, no double entry.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── STATS ─────────────────────────────────────────────────── -->
+<section class="section stats-section reveal">
+  <div class="stats-grid">
+    <div class="stat-counter" data-target="60">
+      <strong><span class="counter">0</span><span class="suffix">%</span></strong>
+      <span>Dead stock reduction</span>
+    </div>
+    <div class="stat-counter" data-target="8000">
+      <strong><span class="counter">0</span><span class="suffix">+</span></strong>
+      <span>Transfer opportunities identified</span>
+    </div>
+    <div class="stat-counter" data-target="1276">
+      <strong><span class="counter">0</span><span class="suffix">x</span></strong>
+      <span>Faster stock rebalancing</span>
+    </div>
+    <div class="stat-counter" data-target="92">
+      <strong><span class="counter">0</span><span class="suffix">%</span></strong>
+      <span>Inventory accuracy</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── DIFFERENTIATOR ───────────────────────────────────────── -->
+<section class="section-full alt-full reveal">
+  <div class="problem-content">
+    <div class="section-eyebrow" style="justify-content:center;">
+      <span class="section-num">04</span>
+      <span class="label">Why Jiran?</span>
+    </div>
+    <h2 class="problem-heading">ENTERPRISE POWER. CORNER STORE SIMPLICITY.</h2>
+    <p>Jiran is built specifically for general stores. It focuses on simplicity, speed, and real-world usability — giving small retailers access to tools typically reserved for large-scale operations.</p>
+    <p style="margin-top:1rem;">Our vision is to unify independent stores into one intelligent inventory network, turning fragmentation into collective strength.</p>
+  </div>
+  <div class="bg-word">NETWORK</div>
+</section>
+
+<!-- ── TEAM ─────────────────────────────────────────────────── -->
+<section class="section">
+  <div class="team-heading reveal">
+    <div class="team-heading-line"></div>
+    <span class="label">The Team</span>
+    <div class="team-heading-line"></div>
+  </div>
+  <h2 class="reveal" style="text-align:center;">Meet the Builders</h2>
+  <div class="team-grid reveal-group">
+    <div class="team-card">
+      <img src="images/yaasir.jpeg" alt="Yaasir">
+      <div class="team-card-info">
+        <h3>Yaasir Bin Muneer</h3>
+        <p class="role">Project Lead & Full-Stack Development</p>
+        <p>Led the project's overall direction while overseeing system architecture and full-stack integration.</p>
+      </div>
+    </div>
+    <div class="team-card">
+      <img src="images/youssef.jpeg" alt="Youssef">
+      <div class="team-card-info">
+        <h3>Youssef Mansi</h3>
+        <p class="role">Frontend Engineering Lead</p>
+        <p>Designed and developed the frontend experience, ensuring usability and system compatibility.</p>
+      </div>
+    </div>
+    <div class="team-card">
+      <img src="images/mohsin.jpeg" alt="Mohsin">
+      <div class="team-card-info">
+        <h3>Muhammad Mohsin</h3>
+        <p class="role">Machine Learning Engineer</p>
+        <p>Developed and optimized machine learning models for inventory insights and forecasting.</p>
+      </div>
+    </div>
+    <div class="team-card">
+      <img src="images/dania.jpeg" alt="Dania">
+      <div class="team-card-info">
+        <h3>Dania Nadeem</h3>
+        <p class="role">Marketing & Strategy Lead · UI/UX Designer</p>
+        <p>Led branding, positioning, and presentation strategy, shaping how Jiran is communicated and perceived.</p>
+      </div>
+    </div>
+    <div class="team-card">
+      <img src="images/hamdan.jpeg" alt="Hamdan">
+      <div class="team-card-info">
+        <h3>Hamdan Khan</h3>
+        <p class="role">Backend Systems Engineer</p>
+        <p>Supported backend development and system logic while assisting with integration of core features.</p>
+      </div>
+    </div>
+    <div class="team-card">
+      <img src="images/asmaa.jpeg" alt="Asmaa">
+      <div class="team-card-info">
+        <h3>Asmaa Fatima</h3>
+        <p class="role">Documentation & Communications</p>
+        <p>Managed formal documentation, structured reports, and coordinated communication across the project.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ───────────────────────────────────────────────── -->
+<footer>
+  <span class="footer-logo">Jiran</span>
+  <p>© 2026 Jiran. All rights reserved.</p>
+</footer>
+
+<script>
+/* ── Scroll reveal ── */
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal, .reveal-group').forEach(el => observer.observe(el));
+
+/* ── Stat counters ── */
+const counterObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    const el = entry.target;
+    const target = parseInt(el.dataset.target);
+    const counter = el.querySelector('.counter');
+    let start = 0;
+    const duration = target > 500 ? 2400 : 1800;
+    const step = ts => {
+      if (!start) start = ts;
+      const p = Math.min((ts - start) / duration, 1);
+      const ease = 1 - Math.pow(1 - p, 3);
+      counter.textContent = Math.floor(ease * target).toLocaleString();
+      if (p < 1) requestAnimationFrame(step);
+      else counter.textContent = target.toLocaleString();
+    };
+    requestAnimationFrame(step);
+    counterObserver.unobserve(el);
+  });
+}, { threshold: 0.5 });
+document.querySelectorAll('.stat-counter').forEach(el => counterObserver.observe(el));
+
+/* ── Hero network canvas ── */
+const canvas = document.getElementById('network-canvas');
+const ctx = canvas.getContext('2d');
+let nodes = [];
+function resize() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
+resize();
+window.addEventListener('resize', () => { resize(); initNodes(); });
+function initNodes() {
+  nodes = Array.from({ length: 38 }, () => ({
+    x: Math.random() * canvas.width, y: Math.random() * canvas.height,
+    vx: (Math.random() - 0.5) * 0.4, vy: (Math.random() - 0.5) * 0.4,
+    r: Math.random() * 2 + 1.5
+  }));
+}
+initNodes();
+function drawNetwork() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  for (let i = 0; i < nodes.length; i++) {
+    const a = nodes[i];
+    a.x += a.vx; a.y += a.vy;
+    if (a.x < 0 || a.x > canvas.width) a.vx *= -1;
+    if (a.y < 0 || a.y > canvas.height) a.vy *= -1;
+    for (let j = i + 1; j < nodes.length; j++) {
+      const b = nodes[j];
+      const dx = a.x - b.x, dy = a.y - b.y;
+      const dist = Math.sqrt(dx*dx + dy*dy);
+      if (dist < 160) {
+        ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y);
+        ctx.strokeStyle = `rgba(75,127,232,${(1-dist/160)*0.18})`; ctx.lineWidth = 1; ctx.stroke();
+      }
+    }
+    ctx.beginPath(); ctx.arc(a.x, a.y, a.r, 0, Math.PI*2);
+    ctx.fillStyle = 'rgba(107,156,232,0.55)'; ctx.fill();
+  }
+  requestAnimationFrame(drawNetwork);
+}
+drawNetwork();
+
+/* ── Mini canvases ── */
+function setupMiniCanvas(id, connected) {
+  const c = document.getElementById(id);
+  if (!c) return;
+  const x = c.getContext('2d');
+  const parent = c.parentElement;
+  const W = parent.offsetWidth || 400;
+  const H = parent.offsetHeight || 300;
+  c.width = W; c.height = H;
+  c.style.width = W + 'px';
+  c.style.height = H + 'px';
+  const N = 9;
+  const pts = Array.from({length: N}, (_, i) => ({
+    x: 40 + (i % 3) * ((W-80)/2) + (Math.random()-0.5)*20,
+    y: 40 + Math.floor(i/3) * ((H-80)/2) + (Math.random()-0.5)*20,
+    vx: (Math.random()-0.5)*0.3, vy: (Math.random()-0.5)*0.3,
+    pulse: Math.random()*Math.PI*2
+  }));
+  function draw(t) {
+    x.clearRect(0,0,W,H);
+    pts.forEach(p => { p.x += p.vx; p.y += p.vy; if(p.x<20||p.x>W-20) p.vx*=-1; if(p.y<20||p.y>H-20) p.vy*=-1; p.pulse+=0.03; });
+    if (connected) {
+      for (let i=0; i<pts.length; i++) for (let j=i+1; j<pts.length; j++) {
+        const dx=pts[i].x-pts[j].x, dy=pts[i].y-pts[j].y, d=Math.sqrt(dx*dx+dy*dy);
+        if (d < W*0.55) {
+          x.beginPath(); x.moveTo(pts[i].x,pts[i].y); x.lineTo(pts[j].x,pts[j].y);
+          x.strokeStyle=`rgba(75,127,232,${(1-d/(W*0.55))*0.5})`; x.lineWidth=1.5; x.stroke();
+        }
+      }
+    }
+    pts.forEach(p => {
+      const glow = connected ? 0.4+Math.sin(p.pulse)*0.15 : 0.15;
+      const col = connected ? '75,127,232' : '120,140,180';
+      if (connected) {
+        x.beginPath(); x.arc(p.x,p.y,10,0,Math.PI*2);
+        x.strokeStyle=`rgba(75,127,232,${glow*0.4})`; x.lineWidth=1; x.stroke();
+      }
+      x.beginPath(); x.arc(p.x,p.y,5,0,Math.PI*2);
+      x.fillStyle=`rgba(${col},${glow})`; x.fill();
+    });
+    requestAnimationFrame(draw);
+  }
+  draw(0);
+}
+
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    // isolated canvas — full section background
+    const iso = document.getElementById('isolated-canvas');
+    if (iso) {
+      const ctx = iso.getContext('2d');
+      iso.width = iso.offsetWidth;
+      iso.height = iso.offsetHeight;
+      const W = iso.width, H = iso.height;
+      const pts = Array.from({length: 28}, () => ({
+        x: Math.random()*W, y: Math.random()*H,
+        vx: (Math.random()-0.5)*0.35, vy: (Math.random()-0.5)*0.35
+      }));
+      function drawIso() {
+        ctx.clearRect(0,0,W,H);
+        pts.forEach(p => {
+          p.x += p.vx; p.y += p.vy;
+          if(p.x<0||p.x>W) p.vx*=-1;
+          if(p.y<0||p.y>H) p.vy*=-1;
+          ctx.beginPath(); ctx.arc(p.x,p.y,3,0,Math.PI*2);
+          ctx.fillStyle='rgba(120,140,180,0.35)'; ctx.fill();
+        });
+        requestAnimationFrame(drawIso);
+      }
+      drawIso();
+    }
+    // connected canvas
+    setupMiniCanvas('connected-canvas', true);
+  }, 100);
+});
+</script>
+</body>
+</html>
